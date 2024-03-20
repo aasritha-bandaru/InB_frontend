@@ -11,7 +11,7 @@ class feedbackservice {
             username : props.username
 
         }
-     return axios.post(`http://localhost:8080/api/Product/addFeeback`,details);
+     return axios.post(`http://localhost:8082/api/Product/addFeeback`,details);
 }
 catch(err)
  {
