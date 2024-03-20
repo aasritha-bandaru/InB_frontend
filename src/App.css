@@ -56,6 +56,17 @@ body{
  
 }
 
+.bar-form{
+  /* max-width: 978px; 
+  max-width: 530px;*/
+  width: 100vw;
+  display:flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  /* box-shadow: 1px 3px 10px #e9ecef; */
+  background-color: white;
+}
+
 .remove{
   max-width: 30%;
   height: 55%;
@@ -85,7 +96,12 @@ body{
   flex-direction: column;
   align-items: center; 
    background-color: white;
-   padding: 10rem 39rem;
+   padding: 11rem 40rem;
+}
+
+.chartdetails{
+  background-color: white;
+  padding: 10rem 39rem;
 }
 
 .feedbackDetails{

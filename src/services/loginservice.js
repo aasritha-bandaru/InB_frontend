@@ -5,7 +5,7 @@ class loginservice  {
    getByUsernamePassword(username,password)
    {
    try{
-    return axios.get(`http://localhost:8080/api/UserDetails/login/${username}/${password}`);
+    return axios.get(`http://localhost:8082/api/UserDetails/login/${username}/${password}`);
 }
 catch(err)
 {

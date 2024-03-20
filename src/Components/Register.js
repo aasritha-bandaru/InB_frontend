@@ -10,12 +10,15 @@ const Register =(props) =>{
     const [username, setUsername] = useState('');
     const[password, setPassword] = useState('');
     const [email, setEmail] = useState(''); 
-    const [phonenumber, setPhone] = useState('');
+  //  const [phonenumber, setPhone] = useState('');
+    const [role, setRole] =useState('');
     const [address, setAddress] = useState('');
     const [securityans, setSecurityans] = useState('');
    
 
     const navigate = useNavigate();
+
+    const roles = ["User", "Admin"];
 
     const addDetails =(e)=>{
         e.preventDefault();
@@ -25,7 +28,8 @@ const Register =(props) =>{
             username : username,
             password : password,
             email : email,
-            phonenumber : phonenumber,
+          //  phonenumber : phonenumber,
+            role : role,
             address : address,
             securityans : securityans
         }
@@ -53,6 +57,14 @@ const Register =(props) =>{
     const navigateToLogin =()=>{
         navigate("/");
 
+    }
+
+    const onRoleChangeHandler =(event)=>{
+        setRole(event.target.value);
+        console.log(
+            "User Selected rating - ",
+            event.target.value
+        );
     }
   
    
@@ -84,9 +96,21 @@ const Register =(props) =>{
                  <label>Email</label>      
                  <input id="email" type="email" placeholder="email" value={email} onChange={(event)=> setEmail(event.target.value)} ></input>  
                 
-                 <label>Phone number</label>      
-                 <input id="phone" type="number" placeholder="phone number" pattern="[0-9]{10}"  value={phonenumber} onChange={(event)=> setPhone(event.target.value)} ></input>  
+               {/*}  <label>Phone number</label>      
+                 <input id="phone" type="number" placeholder="phone number" pattern="[0-9]{10}"  value={phonenumber} onChange={(event)=> setPhone(event.target.value)} ></input>  */}
                 
+                <label>Select the role</label>
+                <select onChange={onRoleChangeHandler}>
+                <option>Select one</option>
+                {roles.map((option, index) => {
+                    return (
+                        <option key={index}>
+                            {option}
+                        </option>
+                    );
+                })}
+            </select><br/>
+
                  <label>Address</label>      
                  <input id="address" type="text" placeholder="address" value={address} onChange={(event)=> setAddress(event.target.value)} ></input>  
                 

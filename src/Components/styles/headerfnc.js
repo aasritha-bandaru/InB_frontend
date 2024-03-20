@@ -28,7 +28,7 @@ import { useLocation } from 'react-router-dom';
         <header  className='header'>
         <h4 id="name">Infinity & Beyond</h4>
         <div className='headerbtn'>
-       { <button id="TnC" class="text-white" onClick={TnC}>Terms and Conditions</button>}
+       <button id="TnC" class="text-white" onClick={TnC}>Terms and Conditions</button>
          <button id="Profile" class="text-white" onClick={profileDetails}>Profile</button> 
         <button id="logout" class="text-white" onClick = {logout}>Logout</button>
         </div>

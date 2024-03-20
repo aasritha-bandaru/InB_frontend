@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-class Footer extends Component {
-    render() {
+function Footer (){
+    const navigate = useNavigate();
+    const FAQ=()=>{
+        navigate("/FAQ");
+      }
         return (
            
             <div>
             <footer className="footer" >
              <div>
-            <h6 class="text-white">Help Center</h6> 
-             <h6 class="text-white">FAQ</h6>
+            {/* <button id="TnC"  class="text-white" type="button" onclick="window.location.href='https://www.google.com/maps'">Locate Us</button>*/}
+             <a  href="https://www.google.com/maps" id="TnC" class="text-white">Locate Us</a>
+
+            
+             <button id="TnC" class="text-white" onClick={FAQ}>FAQ</button>
             </div> 
               
               
@@ -19,7 +26,7 @@ class Footer extends Component {
                                
                            </div>
         );
-    }
+    
 }
 
 export default Footer;

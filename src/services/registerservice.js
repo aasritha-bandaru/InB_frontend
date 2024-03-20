@@ -10,13 +10,14 @@ class registerservice  {
             username : props.username,
             password: props.password,
             email : props.email,
-            phonenumber : props.phonenumber,
+        //    phonenumber : props.phonenumber,
+            role : props.role,
             address : props.address,
             securityans : props.securityans
 
 
         }
-     return axios.post(`http://localhost:8080/api/UserDetails/adduserdetails`,details);
+     return axios.post(`http://localhost:8082/api/UserDetails/adduserdetails`,details);
  }
  catch(err)
  {

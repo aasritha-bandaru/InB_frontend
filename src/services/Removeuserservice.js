@@ -9,7 +9,7 @@ class Removeuserservice  {
     //     securityans : props.securityans,
 
     // }
-    return axios.delete(`http://localhost:8080/api/UserDetails/deleteuser/${username}/${securityans}`);
+    return axios.delete(`http://localhost:8082/api/UserDetails/deleteuser/${username}/${securityans}`);
 
 }
 catch(err)

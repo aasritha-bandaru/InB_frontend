@@ -20,10 +20,6 @@ const Profiledetails=(props)=> {
                 <td>{location.state.name.email}</td>
                 </tr>
                 <tr>
-                <td>Phone number</td>
-                <td>{location.state.name.phonenumber}</td>
-                </tr>
-                <tr>
                 <td>Address</td>
                 <td>{location.state.name.address}</td>
                 </tr>

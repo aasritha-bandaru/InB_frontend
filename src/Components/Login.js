@@ -14,9 +14,13 @@ const Login = (props)=>  {
         e.preventDefault();
         loginservice.getByUsernamePassword(username,password).then((response)=>{
             let user = response.data;
-            if(user){
+            if(user.role === "User"){
  //if(username === user.username && password===user.password){
     navigate('/Profile',{state:{id:1,name:response.data}});
+            }
+            else if(user.role === "Admin"){
+                navigate('/Admin',{state:{id:1,name:response.data}});
+               // alert("Invalid username/password");
             }
             else{
                 alert("Invalid username/password");

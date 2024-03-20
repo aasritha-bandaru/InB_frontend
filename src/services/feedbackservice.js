@@ -22,7 +22,7 @@ catch(err)
     getByUsername(username)
    {
    try{
-    return axios.get(`http://localhost:8080/api/Product/getFeedback/${username}`);
+    return axios.get(`http://localhost:8082/api/Product/getFeedback/${username}`);
 }
 catch(err)
 {
