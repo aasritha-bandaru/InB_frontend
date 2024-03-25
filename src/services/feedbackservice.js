@@ -11,7 +11,7 @@ class feedbackservice {
             username : props.username
 
         }
-     return axios.post(`http://localhost:8082/api/Product/addFeeback`,details);
+     return axios.post(`http://15.207.231.27:8082/api/Product/addFeeback`,details);
 }
 catch(err)
  {
@@ -22,7 +22,7 @@ catch(err)
     getByUsername(username)
    {
    try{
-    return axios.get(`http://localhost:8082/api/Product/getFeedback/${username}`);
+    return axios.get(`http://15.207.231.27:8082/api/Product/getFeedback/${username}`);
 }
 catch(err)
 {

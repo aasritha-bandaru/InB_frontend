@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef} from 'react';
 import axios from 'axios';
 import { Bar } from 'react-chartjs-2';
-import Chart from 'chart.js/auto';
 import Headerfnc from './styles/headerfnc';
 import Footer from './styles/footer';
 
@@ -10,7 +9,7 @@ const Feedbackchart = () => {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    const apiEndpoint = 'http://localhost:8082/api/Product/getAllFeedback';
+    const apiEndpoint = 'http://15.207.231.27:8082/api/Product/getAllFeedback';
 
     axios.get(apiEndpoint)
       .then(response => {

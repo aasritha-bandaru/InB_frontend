@@ -17,7 +17,7 @@ class registerservice  {
 
 
         }
-     return axios.post(`http://localhost:8082/api/UserDetails/adduserdetails`,details);
+     return axios.post(`http://15.207.231.27:8082/api/UserDetails/adduserdetails`,details);
  }
  catch(err)
  {
