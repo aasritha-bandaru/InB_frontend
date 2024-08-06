@@ -2,6 +2,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import SettingsDropdown from './Settings';
 
  function Headerfnc() {
         const navigate = useNavigate();
@@ -20,17 +21,20 @@ import { useLocation } from 'react-router-dom';
   const TnC=()=>{
     navigate("/TnC");
   }
+  
   // const Profile = ()=>{
   //   navigate("/Profile");
   // }
   return (
     <div>
         <header  className='header'>
-        <h4 id="name">Infinity & Beyond</h4>
+        <h4 id="name">Infinity & Beyond</h4> 
         <div className='headerbtn'>
        <button id="TnC" class="text-white" onClick={TnC}>Terms and Conditions</button>
-         <button id="Profile" class="text-white" onClick={profileDetails}>Profile</button> 
+         <button id="Profile" class="text-white" onClick={profileDetails}>Profile</button>
+         <SettingsDropdown/>
         <button id="logout" class="text-white" onClick = {logout}>Logout</button>
+        
         </div>
         </header>
       

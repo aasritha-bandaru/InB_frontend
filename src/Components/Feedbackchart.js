@@ -9,7 +9,7 @@ const Feedbackchart = () => {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    const apiEndpoint = 'http://15.207.231.27:8082/api/Product/getAllFeedback';
+    const apiEndpoint = 'http://localhost:8082/api/Product/getAllFeedback';
 
     axios.get(apiEndpoint)
       .then(response => {
@@ -71,6 +71,7 @@ const Feedbackchart = () => {
   //   }
   // };
 
+   
   return (
         <div>
      <div className='chartdetails'>

@@ -6,6 +6,7 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
+/*  overflow-x: hidden;*/
  
 
 }
@@ -16,7 +17,9 @@ body{
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
   background-image: url("C:\Users\AABANDAR\Pictures\Saved Pictures\login.png");
-  background-repeat: no-repeat;
+ /* height: 100%;
+  width: 100%;*/
+  background-repeat: no-repeat; 
   background-size: "cover";
   /*background-image: url("C:\Users\AABANDAR\Pictures\Saved Pictures\bank.jpg"
         );
@@ -43,10 +46,11 @@ body{
   border-radius: 5px;
   /* box-shadow: 1px 3px 10px #e9ecef; */
   background-color: white;
+  height: 100vh;
 }
 
 .reg-form{
-  max-width: 700px;
+  max-width: 540px;
   width: 100vw;
   display:flex;
   border: 1px solid #e9ecef;
@@ -85,7 +89,7 @@ body{
   flex-direction: column;
   align-items: center; 
    background-color: white;
-   padding: 14rem 41rem;
+   padding: 11.5rem 35.5rem;
  /* min-height: 100vh;
   min-width: 240vh; */
 
@@ -101,7 +105,8 @@ body{
 
 .chartdetails{
   background-color: white;
-  padding: 10rem 39rem;
+  padding: 5.1rem 25.5rem;
+  width: 550px;
 }
 
 .feedbackDetails{
@@ -116,24 +121,12 @@ body{
   flex-direction: column;
   align-items: center; 
    background-color: white;
-    padding: 5.9rem 37.4rem;
+    padding: 10.3rem 32.7rem;
  /* min-height: 100vh;
   min-width: 240vh; */
 
 }
-.TnC{
-  background-color: white;
-  padding : 5.5rem 20rem;
-}
 
-#logout,#TnC ,#Profile 
-{
-  background-color: #302b63;
-  /* padding-left: 5%; */
-}
-.headerbtn{
-  padding-left: 65%;
-}
 
 
 /* .auth-form{
@@ -183,19 +176,21 @@ button{
   cursor: pointer;
 }
 
-#form, #regform{
+#form{
   max-width: 320px;
   width: 100vw;
-  margin: 2em auto;
+  /*margin: 2em auto;*/
+  margin: -6em auto;
   
 }
 
 #regform{
   max-width: 320px;
   width: 100vw;
-  margin-left: 190px;
+  margin: 2em auto;
+  margin-left: 125px;
   padding: 0%;
-  
+  margin-top: 100px;
 }
 
 
@@ -290,9 +285,27 @@ button{
   left: 0;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /*flex-direction: row;*/
   
 }
+.TnC{
+  background-color: white;
+  padding : 3.5rem 19rem;
+}
+
+#logout,#TnC ,#Profile
+{
+  background-color: #302b63;
+  /* padding-left: 5%; */
+}
+.headerbtn{
+ /* padding-left: 63%; */
+  display: flex;
+  align-items: center;
+}
+
 /* .row{
  padding:1rem;
 } */
@@ -301,4 +314,9 @@ button{
 }
 #name{
   color: white;
+}
+
+.settings-dropdown {
+  margin-left: 10px;
+  background-color: #302b63;
 }
